@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main-container .side-bar img{/*start of side bar*/
+    width: 25px;
+    height: 25px;
+    padding: 10px 0 0 10px ;
+    
+
+}
+.main-container .side-bar img:hover{
+    background-color: rgba(231, 231, 231, 0.925);
+    padding: 12px;
+}
+
+.main-container .side-bar{
+    height: 100vh;
+    width: 50px;
+    border-right: 1px solid rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    
+    
+}
+.side-bar img:nth-child(6){
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 70px;
+  padding: 12px;
+    
+}/*End of side bar*/
+.side-nav{/*start of side nav*/
+    width:350px ;
+    height: 110px;
+    border: 2px solid rgba(221, 221, 221, 0.781);
+    position: fixed;
+
+    left: 50px;
+    
+}
+.side-nav  h1{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+margin: 30px 0 0 15px;
+display: inline;
+}
+.side-nav img{
+float: right;
+padding: 5px;
+width: 25px;
+height: 25px;
+
+}
+.side-nav .input input{
+  padding: 10px ;
+  height: 35px;
+  width: 250px;
+  margin: 20px  0 0 20px  ;
+  border-radius: 50px;
+  border: 1px solid rgba(194, 184, 184, 0.712);
+  outline: none;
+  font-size: 15px;
+  box-sizing: border-box;
+  /*End of sidse nav*/
+}
+.people{/*start of people*/
+    width: 351px;
+    height: 88%;
+    border: 1px solid rgba(194, 184, 184, 0.712);
+    position: fixed;
+    left: 50px;
+    top: 113px;
+    display: grid;
+
+   
+}
+.people .friend img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+}
+.people .friend .info{
+    margin-left: 10px;
+    font-weight: lighter;
+    color:black;
+    float: left;
+    margin: 2px 0 0 10px;
+    
+}
+.people .friend{
+    margin: 10px 10px 0 10px ;
+    height: 45px;
+    
+}
+.people .friend .info p{
+    font-size: 13px ;
+    color: gray;
+}/*End of people*/
+.main-nav{/*start of main nav */
+    width: 100%;
+    height: 53px;
+    position: fixed;
+    left: 402px;
+    border-bottom: 1px solid rgba(194, 184, 184, 0.712) ;
+}
+.main-nav img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    padding: 10px;
+    float: left;
+}
+.main-nav .info2{
+float: left;
+margin: 7px 0 0 0;
+}
+.main-nav .info2 p{
+    color: gray ;
+    font-size: 14px;
+}
+.main-nav .main-nav-img{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    left: 57%;
+    display: flex;
+}
+.main-nav .main-nav-img img{
+    height: 25px;
+    width: 25px;
+}/*end of main nav*/
+.main-chat{/*start of main chat*/
+    position: fixed;
+    left: 402px;
+    width: 870px;
+    height: 100vh;
+    text-align: center;
+    
+    
+}
+.main-chat img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+   
+}
+.main-chat p{
+    color: gray;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+.main-chat .info3{
+padding: 10px;
+margin: 80px 0 0 0;
+
+}
+.main-input{
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 10px;
+    margin:0 0 0 10px;
+    display: flex;
+
+}
+.main-input img{
+    height: 23px;
+    width: 23px;
+    border-radius: 0;
+    padding: 5px;
+    margin: 0 0 5px 0;
+
+}
+.main-input input{
+    height: 30px;
+    width: 665px;
+    position: absolute;
+    bottom: 5px;
+    border: 1px solid rgba(235, 235, 235, 0.822);
+    outline: none;
+    border-radius: 50px;
+    left: 140px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.main-input img:nth-child(6){
+    position: absolute;
+    left: 810px;
+}/*end of main chat*/
+@media screen and (max-width:600px) {
+.side-bar{
+    visibility: hidden;
+}
+.people{
+width: 100%;
+position: fixed;
+left: 0;
+}
+.side-nav{
+width: 495px;
+position: fixed;
+left: 0;
+}
+.main-chat{
+    display: none;
+}
+.main-nav{
+    display: none;
+}
+}
+head .title{
+    color: blue;
+}
